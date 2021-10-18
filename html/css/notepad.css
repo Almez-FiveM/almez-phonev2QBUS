@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* notepad App */
+
+.notepad-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #2f3546;
+    overflow: hidden;
+}
+
+.notepad-header {
+    position: absolute;
+    height: 9vh;
+    width: 100%;
+    /* background-color: #4878f3; */
+    text-align: left;
+    line-height: 12.5vh;
+    color: #1e1e1e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.notepad-header>p {
+    font-weight: 750;
+    position: absolute;
+    width: 50%;
+    left: 5%;
+    font-size: 2.2vh;
+    color: white;
+}
+
+.test-slet {
+    position: absolute;
+    width: 30%;
+    right: 2vh;
+    top: 50%;
+    transition: .1s ease-in-out;
+    text-align: center;
+    line-height: 2.5vh;
+    font-size: 10px;
+    top: 60%;
+    background-color: #489af1;
+    color: white;
+    border-radius: 2px;
+}
+
+.test-slet:hover {
+    background-color: #297acf;
+    transition: .1s ease-in-out;
+}
+
+#notepad-header-name {
+    position: absolute;
+    top: 1px;
+    right: 2vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: rgb(32, 32, 32);
+    z-index: 99;
+}
+
+.notepad-list {
+    position: absolute;
+    width: 99%;
+    background-color: rgb(255, 255, 255);
+    height: 51vh;
+    top: 9vh;
+    left: .1vh;
+    box-shadow: 0px 0 1px .5px rgba(0, 0, 0, 0.233);
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+}
+
+.notepad-list::-webkit-scrollbar {
+    display: none;
+}
+
+.notepad {
+    position: relative;
+    background-color: #ffe800;
+    height: auto;
+    min-height: 4vh;
+    width: 90%;
+    transition: .05s ease-in-out;
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 3px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.notepad>p {
+    font-size: 14px;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    color: #070604;
+    height: 100%;
+    word-wrap: break-word;
+    margin: 10px 5px 10px 5px;
+}
+
+.notepad:hover {
+    background-color: #ffe800;
+    transition: .05s ease-in-out;
+}
+
+.notepad-sender {
+    font-size: 17px;
+    font-weight: 750;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1.5vh;
+    padding-bottom: 1vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #070604;
+    max-width: 25vh;
+}
+
+.new-notepad {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: #f2f2f2;
+    overflow: hidden;
+    left: -30vh;
+}
+
+.new-notepad-footer {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(234, 234, 234);
+}
+
+.new-notepad-footer-item {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    line-height: 5vh;
+    font-size: 2.2vh;
+    transition: .1s linear;
+    color: rgb(48, 48, 48);
+}
+
+.new-notepad-footer-item:hover {
+    background-color: rgb(214, 214, 214);
+    transition: .1s linear;
+}
+
+.new-notepad-footer-item:hover .new-notepad-icon {
+    color: rgb(32, 32, 32);
+    animation: Shake 1s infinite;
+}
+
+.new-notepad-header {
+    position: absolute;
+    height: 9vh;
+    width: 100%;
+    /* background-color: #4878f3; */
+    text-align: left;
+    line-height: 12.5vh;
+    color: #1e1e1e;
+    font-family: 'Montserrat', sans-serif;
+    background: #2f3546;
+}
+
+#new-notepad-header-text {
+    font-weight: 750;
+    position: absolute;
+    width: 50%;
+    left: 5%;
+    font-size: 2.2vh;
+    color: white;
+}
+
+.new-notepad-textarea {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 15vh;
+    height: 20vh;
+    width: 80%;
+    outline: none;
+    border: none;
+    resize: none;
+    /* border-radius: 1.5vh 1.5vh 1.5vh 1.5vh; */
+    box-shadow: 0px 0 1px .5px rgba(0, 0, 0, 0.233);
+    padding: 1.5vh;
+    font-family: 'Montserrat', sans-serif;
+    transition: .1s linear;
+}
+
+.new-notepad-imagearea {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 35vh;
+    height: 10vh;
+    width: 80%;
+    outline: none;
+    border: none;
+    resize: none;
+    /* border-radius: 1.5vh 1.5vh 1.5vh 1.5vh; */
+    box-shadow: 0px 0 1px .5px rgba(0, 0, 0, 0.233);
+    padding: 1.5vh;
+    font-family: 'Montserrat', sans-serif;
+    transition: .1s linear;
+}
+
+
+/* .new-notepad-textarea:focus {
+    border-bottom: 0.5vh solid #ff8f1a;
+}
+
+.new-notepad-textarea:valid {
+    border-bottom: 0.5vh solid #29b417;
+} */
+
+.notepad-home {
+    position: relative;
+    left: 0;
+}
